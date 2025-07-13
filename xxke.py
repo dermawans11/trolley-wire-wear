@@ -361,7 +361,7 @@ test_generator = OptimizedWireDataGenerator(
 # MAXIMUM PERFORMANCE MODEL
 def create_maximum_performance_model():
     """
-    Model dengan arsitektur optimal untuk mencapai akurasi maksimal >90%
+    Model dengan arsitektur optimal untuk mencapai akurasi 
     """
     # EfficientNetB0 dengan fine-tuning optimal
     base_model = EfficientNetB0(
@@ -459,7 +459,7 @@ history = model.fit(
     verbose=1
 )
 
-# COMPREHENSIVE EVALUATION dengan optimal threshold
+# COMPREHENSIVE EVALUATION 
 def maximum_performance_evaluation(model, test_generator, class_names=['TIDAK AUS', 'AUS']):
     """
     Comprehensive model evaluation with optimal threshold finding
@@ -1373,15 +1373,15 @@ def execute_enhanced_breakthrough_strategy():
     
     return avg_accuracy, ensemble_accuracy, fold_results, fold_models, status
 
-# EXECUTE ENHANCED BREAKTHROUGH
+# EXECUTE ENHANCED 
 if __name__ == "__main__":
     print("Memulai Enhanced Breakthrough Strategy...")
     avg_acc, ensemble_acc, results, models, final_status = execute_enhanced_breakthrough_strategy()
     
     print(f"\n{'='*70}")
-    print("FINAL ENHANCED BREAKTHROUGH SUMMARY")
+    print(" ENHANCED BREAKTHROUGH SUMMARY")
     print(f"{'='*70}")
-    print(f"Target 90% accuracy: {final_status}")
+    print(f" accuracy: {final_status}")
     print(f"Individual Average: {avg_acc*100:.2f}%")
     print(f"Ensemble Performance: {ensemble_acc*100:.2f}%")
     
@@ -1390,32 +1390,3 @@ if __name__ == "__main__":
     
     print(f"Best Method: {best_method} ({best_score*100:.2f}%)")
     
-    if best_score > 0.90:
-        print(f"\nBREAKTHROUGH SUCCESS")
-        print(f"Target 90%  {best_method} method")
-        print(f"Enhanced optimizations ")
-        print(f"Model ready ")
-    elif best_score > 0.89:
-        print(f"\n CLOSE TO TARGET")
-        print(f"Consider test-time augmentation for final optimization")
-        print(f"Data augmentation could bridge remaining gap")
-    else:
-        print(f"\nSIGNIFICANT IMPROVEMENT ACHIEVED")
-        print(f"Enhanced optimizations working effectively")
-        print(f"Consider ensemble for 90% target")
-    
-    print(f"\nOPTIMIZATION TECHNIQUES APPLIED:")
-    print(f"- Focal Loss for precision-recall balance")
-    print(f"- Compatible Learning Rate Scheduling")
-    print(f"- Threshold Optimization per fold")
-    print(f"- Enhanced augmentation strategy")
-    print(f"- Ensemble averaging across 5 models")
-    print(f"- Fixed visualization layout issues")
-    print(f"- Stabilized random seeds across folds")
-    
-    if best_score < 0.90:
-        print(f"\n STEPS FOR 90% TARGET:")
-        print(f"1. Implement Test-Time Augmentation")
-        print(f"2. Collect additional high-quality training data")
-        print(f"3. Try advanced ensemble methods (weighted voting)")
-        print(f"4. Experiment with different backbone architectures")
